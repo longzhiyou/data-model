@@ -9,6 +9,6 @@ package com.lzy.common;
 public interface CommonDefine {
 
     String BASE_URI ="/api";
-
+    String NOT_DELETED = "deleted_on IS NULL  OR deleted_on > CURRENT_TIMESTAMP";
 
 }

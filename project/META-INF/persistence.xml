@@ -3,6 +3,16 @@
 
     <persistence-unit name="persistenceUnit">
         <class>com.lzy.demo.party.domain.PersonEntity</class>
+        <class>com.lzy.demo.party.domain.PartyRoleTypeEntity</class>
+        <class>com.lzy.demo.party.domain.EmployeeEntity</class>
+        <class>com.lzy.demo.party.domain.BookEntity</class>
+        <class>com.lzy.demo.party.domain.BookPublisherEntity</class>
+        <class>com.lzy.demo.party.domain.PublisherEntity</class>
+        <class>com.lzy.demo.party.domain.Book</class>
+        <class>com.lzy.demo.party.domain.BookPublisher</class>
+        <class>com.lzy.demo.party.domain.Publisher</class>
+        <class>com.lzy.demo.party.domain.PersonEntity</class>
+        <class>com.lzy.demo.party.domain.DocumentsEntity</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/data-model"/>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>

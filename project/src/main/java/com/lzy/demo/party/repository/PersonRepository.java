@@ -1,15 +1,16 @@
 package com.lzy.demo.party.repository;
 
 import com.lzy.demo.party.domain.PersonEntity;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+
 
 /**
- * 处方通知仓库
  * User: longzhiyou
- * Date: 2016/11/8
- * Time: 20:04
+ * Date: 2017/1/13
+ * Time: 19:13
  */
-public interface PersonRepository extends CrudRepository<PersonEntity, Long> {
+public interface PersonRepository extends JpaRepository<PersonEntity, Integer> {
 
+    PersonEntity findByName(String name);
 
 }

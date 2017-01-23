@@ -8,9 +8,24 @@ spring:
       username: admin
       password: 123456
       driverClassName:  com.mysql.jdbc.Driver
+      tomcat:
+            test-while-idle: true
+            validation-query: SELECT 1
   jpa:
+    properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+          naming:
+            strategy: org.hibernate.cfg.ImprovedNamingStrategy
+#          ddl-auto: validate
+          ddl-auto: update
     show-sql: true
-common
+
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: true
+
 logging:
   level:
     org.springframework.security: DEBUG
