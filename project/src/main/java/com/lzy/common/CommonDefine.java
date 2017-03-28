@@ -10,5 +10,6 @@ public interface CommonDefine {
 
     String BASE_URI ="/api";
     String NOT_DELETED = "deleted_on IS NULL  OR deleted_on > CURRENT_TIMESTAMP";
+    String DELETED_FIELD = "deletedOn";
 
 }

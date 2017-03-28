@@ -96,14 +96,15 @@ public class DemoApplicationTests {
 //		long countActive = personSoftRepository.countActive();
 
 
-		PersonEntity entity = personSoftRepository.findOne(2);
 
+		PersonEntity entity = personSoftRepository.findOne(2);
+		personSoftRepository.softDelete(3);
 //		PersonEntity person = personRepository.findByName("lzy11");
 
 
 		Book bookA = bookRepository.findOne(21);
 //		ZonedDateTime currentDateAndTime = dateTimeService.getCurrentDateAndTime();
-		bookRepository.delete(20);
+//		bookRepository.delete(20);
 
 
 //		bookRepository.save(new HashSet<Book>(){{

@@ -5,13 +5,15 @@
     - 创建字段
         - created_at timestamp not null default CURRENT_TIMESTAMP
     - 更新字段
-        -  updated_at           timestamp default CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+        - updated_at           timestamp default CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 
 ### 重要注意
 - @ManyToMany(cascade = CascadeType.ALL) 多对多操作一定要添加上
 
 ### 关于逻辑删除 soft-delete
 - [spring-boot-jpa-soft-delete](https://github.com/dzinot/spring-boot-jpa-soft-delete)
+- 字段是 deleted_on timestamp
+- 查询时 在实体上增加 @Where(clause= CommonDefine.NOT_DELETED)
 
 ### docker
 - [spring-boot-maven-docker](https://github.com/dzinot/java-spring-boot-maven-docker)
