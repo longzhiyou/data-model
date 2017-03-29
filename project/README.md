@@ -17,3 +17,6 @@
 
 ### docker
 - [spring-boot-maven-docker](https://github.com/dzinot/java-spring-boot-maven-docker)
+
+### 数据check
+- [spring boot 1.4默认使用 hibernate validator](http://www.cnblogs.com/softidea/p/6043879.html)

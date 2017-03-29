@@ -178,7 +178,7 @@ public class SoftDeletesRepositoryImpl<T, ID extends Serializable> extends Simpl
 	 * Combined Specification from DeletedIsNull and DeletedTimeGreatherThanNow
 	 * to check if the entity is soft deleted or not
 	 */
-	private static final <T> Specification<T> notDeleted() {
+	private static <T> Specification<T> notDeleted() {
 		return Specifications.where(new DeletedIsNull<T>()).or(new DeletedTimeGreatherThanNow<T>());
 	}
 }
